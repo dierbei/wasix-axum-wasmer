@@ -16,4 +16,3 @@ cranelift = ["wasmer-compiler"]
 wasmer = { version = "4.1.2" }
 wasmer-wasix = { version = "0.12.0" }
 wasmer-compiler = { version = "4.1.2", features = ["compiler"], optional = true }
-tokio = "1.32.0"
