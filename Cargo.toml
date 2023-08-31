@@ -1,0 +1,19 @@
+[package]
+name = "wasix-axum-wasmer"
+version = "0.1.0"
+edition = "2021"
+
+[profile.dev]
+opt-level = 3
+
+[features]
+default = [
+    "cranelift",
+]
+cranelift = ["wasmer-compiler"]
+
+[dependencies]
+wasmer = { version = "4.1.2" }
+wasmer-wasix = { version = "0.12.0" }
+wasmer-compiler = { version = "4.1.2", features = ["compiler"], optional = true }
+tokio = "1.32.0"
